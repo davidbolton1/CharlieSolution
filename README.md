@@ -36,6 +36,7 @@ Create the new application and give it any name you'd like.
 4. From the dashboard click Auth Pipeline -> Rules -> Create Rule -> Whitelist for a Specific App -> Save Changes
 ![Alt text](./public/whitelist.png?raw=true "Whitelist Rule")
 
+The rule should look this like:
 ``` javascript
 function userWhitelistForSpecificApp(user, context, callback) {
   // Access should only be granted to verified users.
