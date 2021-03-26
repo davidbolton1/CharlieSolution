@@ -10,7 +10,7 @@ Thanks again for choosing Auth0! Here's a quick guide to getting the application
 
 
 ### Installation
-1. The first step is to either clone or download the repo.
+1. The first step is to either clone or download the repo. <br>
 You can download a zip file or run `git clone CharlieSolution.git`
 
 2. Then, cd into the application directory `cd CharlieSolution` and run ```npm i``` to install the dependencies.
