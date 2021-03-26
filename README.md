@@ -31,7 +31,7 @@ Create the new application and give it any name you'd like.
     - read:clients_keys
 ![Alt text](./public/scope.png?raw=true "Auth0 Management API Page")
 
-**While you are on the Management API page visit the "Api Explorer" tab -> Create application(If you haven't done so already, if you have made an API explorer application already you can skip this step) -> Copy the given token. Navigate to the .env.example file and replace the placeholder in the AUTH0_APIV2_TOKEN field with the token value that was just copied.**
+**While you are on the Management API page visit the "Api Explorer" tab -> Create application(If you have made an API explorer application already you can skip this step) -> Copy the given token. Navigate to the .env.example file and replace the placeholder in the AUTH0_APIV2_TOKEN field with the token value that was just copied.**
 
 4. From the dashboard click Auth Pipeline -> Rules -> Create Rule -> Whitelist for a Specific App
 ![Alt text](./public/whitelist.png?raw=true "Whitelist Rule")
