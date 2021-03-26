@@ -34,7 +34,7 @@ While you are on the Management API page, click the "Api Explorer" tab and copy 
 4. From the dashboard click Auth Pipeline -> Rules -> Create Rule -> Whitelist for a Specific App
 ![Alt text](./public/whitelist.png?raw=true "Whitelist Rule")
 
-Make sure to edit the Rule script after with the name of the app you created earlier, and the emails you want to whitelist. 
+Make sure to edit the newly made Rule script with the name of the app you created earlier, and the emails you want to whitelist. 
 
 
 ### Running the app:
