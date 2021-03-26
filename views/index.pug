@@ -1,0 +1,25 @@
+extends layout
+
+block content
+  .w3-container
+    div.welcomePage
+      h2 Welcome 👋
+      if locals.user
+        p Thank you for for being a valued customer of auth0. 
+          h6 Please click the button below to view your Applications and Rules.
+          br
+          div#errorDiv
+            p
+          form(method='post' name='myForm' id="myForm" action='/ruleView')
+            button.btn.btn-primary(
+              type='submit' 
+              
+              )  View Apps/Rules
+              
+      else
+        p Please #[a(href="/login") Log In] to continue.
+      script.
+       
+              return true;
+            
+

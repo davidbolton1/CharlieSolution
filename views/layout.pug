@@ -1,0 +1,16 @@
+doctype html
+html
+  head
+    title= "Application Management"
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    link(rel='stylesheet', href='https://www.w3schools.com/w3css/4/w3.css')
+
+
+  body
+    nav.w3-bar.w3-border.w3-blue-grey( role="navigation" )
+      a(href="/").w3-bar-item.w3-button.w3-large.w3-margin-left Home
+      if locals.user
+        a(id="qsLogoutBtn" href="/logout").w3-bar-item.w3-button.w3-right.w3-margin-right Log Out
+      else
+        a(id="qsLoginBtn" href="/login").w3-bar-item.w3-button.w3-right.w3-margin-right Log In
+    block content

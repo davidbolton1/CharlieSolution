@@ -1,0 +1,16 @@
+extends layout
+
+block content
+    table
+        tr
+            th Apps
+            th Rules
+        each rules, app in appsAndRules
+            tr
+                td= app
+                td
+                    ul
+                    each rule in rules
+                        li= rule
+                    
+
