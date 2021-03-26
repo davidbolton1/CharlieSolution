@@ -30,7 +30,7 @@ Create the new application and give it any name you'd like.
 ![Alt text](./public/scope.png?raw=true "Auth0 Management API Page")
 
 
-**While you are on the Management API page, click the "Api Explorer" tab and copy the given token, pasting it into the into the AUTH0_APIV2_TOKEN placeholder in the .env file**
+**While you are on the Management API page, click the "Api Explorer" tab and copy the given token. Navigate to the .env.example file and replace the placeholder in the AUTH0_APIV2_TOKEN field with the token value that was just copied.**
 
 4. From the dashboard click Auth Pipeline -> Rules -> Create Rule -> Whitelist for a Specific App
 ![Alt text](./public/whitelist.png?raw=true "Whitelist Rule")
