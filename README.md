@@ -12,7 +12,7 @@ Thanks again for choosing Auth0! Here's a quick guide to getting the application
 ### Installation
 1. The first step is to either clone or download the repo.
 
-2. Then, cd into the application and run ```npm i``` to install the dependencies.
+2. Then, cd into the application directory and run ```npm i``` to install the dependencies.
 
 ### Auth0 Setup
 1. Visit your [auth0 Dashboard](https://manage.auth0.com/dashboard/) -> Applications -> Create Application -> Regular Web Application <br>
