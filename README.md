@@ -21,7 +21,7 @@ Create the new application and give it any name you'd like.
 2. Click the Settings tab of that application and add `http://localhost:3000/callback` and `http://localhost:3000/` to your application's Allowed Callback URLs and Allowed Logout URLs. Like so:
 ![Alt text](./public/dashboard.png?raw=true "Auth0 App Settings")
 
-**While you are in the settings tab, copy the Domain, Client ID, and Client secret and paste them into their respective fields in the .env.example file**
+**While you are in the settings tab, copy the Domain, Client ID, and Client secret and paste them into their respective fields in the .env.example file.**
 
 3. Navigate to Management API page by going to your Dashboard-> API's (in the Applications tab) -> AuthOManagementAPI -> Machine to Machine Applications. Then update your scope/permissions for your app to include these 3 scopes:
     - read:rules
@@ -35,7 +35,7 @@ Create the new application and give it any name you'd like.
 4. From the dashboard click Auth Pipeline -> Rules -> Create Rule -> Whitelist for a Specific App
 ![Alt text](./public/whitelist.png?raw=true "Whitelist Rule")
 
-**Make sure to edit the newly made Rule script with the name of the app you created earlier, and the emails you want to whitelist**
+**Make sure to edit the newly made Rule script with the name of the app you created earlier, and the emails you want to whitelist.**
 
 
 ### Running the app:
