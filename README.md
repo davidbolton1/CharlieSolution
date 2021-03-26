@@ -69,7 +69,7 @@ function userWhitelistForSpecificApp(user, context, callback) {
 ### Running the app:
 
 1. Rename `.env.example` to `.env` <br>
-All of the values of the env file should have been populated as you went through the setup directions. 
+All of the values of the .env file should have been populated as you went through the setup instructions. 
 
 2. Run the application with:
 ```
