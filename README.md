@@ -64,4 +64,6 @@ All of the values of the env file should have been populated as you went through
 ```
 npm start
 ```
-*Note: The application will be served at `localhost:3000` by default. You can change this to whatever you'd like, but make sure to apply the changes to the .env file and update your Auth0 settings. * 
+*Note: The application will be served at `localhost:3000` by default. You can change this to whatever you'd like, but make sure to apply the changes to the .env file and update your Auth0 settings.* 
+
+You can read about more advanced configurations on the [Auth0 Management API V2 Docs](https://auth0.com/docs/api/management/v2).
