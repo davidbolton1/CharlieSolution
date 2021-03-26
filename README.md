@@ -20,7 +20,7 @@ You can download a zip file from GitHub or run `git clone git@github.com:davidbo
 1. Visit your [auth0 Dashboard](https://manage.auth0.com/dashboard/) -> Applications -> Create Application -> Regular Web Application <br>
 Create the new application and give it any name you'd like.
 
-2. Click the Settings tab of that application and add `http://localhost:3000/callback` and `http://localhost:3000/` to your application's Allowed Callback URLs and Allowed Logout URLs, like so:
+2. Click the Settings tab of that application and add `http://localhost:3000/callback` and `http://localhost:3000` to your application's Allowed Callback URLs and Allowed Logout URLs, like so:
 ![Alt text](./public/dashboard.png?raw=true "Auth0 App Settings")
 
 **While you are in the Settings tab, note the values for: Domain, Client ID, and Client Secret. Copy and paste those values into their respective placeholders in the .env.example file.**
