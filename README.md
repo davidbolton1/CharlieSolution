@@ -21,7 +21,7 @@ Create the new application and give it any name you'd like.
 2. Click the Settings tab of that application and add `http://localhost:3000/callback` and `http://localhost:3000/` to your application's Allowed Callback URLs and Allowed Logout URLs. Like so:
 ![Alt text](./public/dashboard.png?raw=true "Auth0 App Settings")
 
-**While you are in the settings tab, copy the Domain, Client ID, and Client secret and paste them into their respective fields in the .env.example file.**
+**While you are in the Settings tab, note the values for: Domain, Client ID, and Client Secret. Copy and paste those values into their respective placeholders in the .env.example file.**
 
 3. Navigate to Management API page by going to your Dashboard-> API's (in the Applications tab) -> AuthOManagementAPI -> Machine to Machine Applications. Then update your scope/permissions for your app to include these 3 scopes:
     - read:rules
