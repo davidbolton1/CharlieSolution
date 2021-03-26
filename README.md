@@ -4,9 +4,9 @@ Hey Charlie,
 Thanks again for choosing Auth0! Here's a quick guide to run the application.
 
 ### Requirements 
--Be protected by Auth0 authorization
--Show applications and rules for a given tenant
--Whitelist certain users
+- Be protected by Auth0 authorization
+- Show applications and rules for a given tenant
+- Whitelist certain users
 
 
 #### Installation
