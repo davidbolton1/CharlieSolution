@@ -6,7 +6,7 @@ Thanks again for choosing Auth0! Here's a quick guide to getting the application
 ## Application Goals
 - Be protected by Auth0 authorization
 - Show applications and rules for a given tenant
-- Whitelist certain users
+- Restrict access to whitelisted users
 
 
 ### Installation
