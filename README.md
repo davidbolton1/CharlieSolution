@@ -34,11 +34,6 @@ To create the non-interactive application go to the dashboard and when you creat
     - read:clients_keys
 ![Alt text](./public/scope.png?raw=true "Auth0 Management API Page")
 
-4. Create a Non Interactive application API Explorer Client:
-* This allow for you to obtain the data needed to generate a list of all your clients and rules from your application Management API.
-To create the non-interactive application go to the dashboard and when you create a new application, you select 'Machine to machine application' then it will prompt a message to select your Auth0 API management and the scopes. You can also follow these steps to create the non-interactive application: https://auth0.com/docs/api/management/v2/create-m2m-app
-**While you are on the Management API page, click the "Api Explorer" tab and copy the given token. Navigate to the .env.example file and replace the placeholder in the AUTH0_APIV2_TOKEN field with the token value that was just copied.**
-
 4. From the dashboard click Auth Pipeline -> Rules -> Create Rule -> Whitelist for a Specific App
 ![Alt text](./public/whitelist.png?raw=true "Whitelist Rule")
 
