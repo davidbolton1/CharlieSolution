@@ -40,7 +40,7 @@ Make sure to edit the newly made Rule script with the name of the app you create
 ### Running the app:
 
 3. Rename `.env.example` to `.env` <br>
-If you've been following along, all of the values should have been populated as you went through the setup directions. 
+All of the values of the env file should have been populated as you went through the setup directions. 
 
 3. Run the application with
 ```
