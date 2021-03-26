@@ -23,20 +23,43 @@ Create the new application and give it any name you'd like.
 
 **While you are in the Settings tab, note the values for: Domain, Client ID, and Client Secret. Copy and paste those values into their respective placeholders in the .env.example file.**
 
-3. Navigate to Management API page by going to your Dashboard-> API's (in the Applications tab) -> AuthOManagementAPI -> Machine to Machine Applications. Then update your scope/permissions for your app to include these 3 scopes:
+3. Create a Non Interactive application API Explorer Client:
+* This allow for you to obtain the data needed to generate a list of all your clients and rules from your application Management API.
+To create the non-interactive application go to the dashboard and when you create a new application, you select 'Machine to machine application' then it will prompt a message to select your Auth0 API management and the scopes. You can also follow these steps to create the non-interactive application: https://auth0.com/docs/api/management/v2/create-m2m-app
+**While you are on the Management API page, click the "Api Explorer" tab and copy the given token. Navigate to the .env.example file and replace the placeholder in the AUTH0_APIV2_TOKEN field with the token value that was just copied.**
+
+4. Navigate to Management API page by going to your Dashboard-> API's (in the Applications tab) -> AuthOManagementAPI -> Machine to Machine Applications. Then update your scope/permissions for your app to include these 3 scopes:
     - read:rules
     - read:clients
     - read:clients_keys
 ![Alt text](./public/scope.png?raw=true "Auth0 Management API Page")
 
-
+4. Create a Non Interactive application API Explorer Client:
+* This allow for you to obtain the data needed to generate a list of all your clients and rules from your application Management API.
+To create the non-interactive application go to the dashboard and when you create a new application, you select 'Machine to machine application' then it will prompt a message to select your Auth0 API management and the scopes. You can also follow these steps to create the non-interactive application: https://auth0.com/docs/api/management/v2/create-m2m-app
 **While you are on the Management API page, click the "Api Explorer" tab and copy the given token. Navigate to the .env.example file and replace the placeholder in the AUTH0_APIV2_TOKEN field with the token value that was just copied.**
 
 4. From the dashboard click Auth Pipeline -> Rules -> Create Rule -> Whitelist for a Specific App
 ![Alt text](./public/whitelist.png?raw=true "Whitelist Rule")
 
-**Make sure to edit the newly made Rule script with the name of the app you created earlier, and the emails you want to whitelist.**
+If the rule already exists, you could add this JS code instead.
+``` javascript
+function (user, context, callback) {
+  if(context.clientName === 'ListOfRulesApplication') {
+      var whitelist = [ 'youremail@example.com' ]; //authorized users
+      var userHasAccess = whitelist.some(
+        function (email) {
+          return email === user.email;
+        });
 
+      if (!userHasAccess) {
+        return callback(new UnauthorizedError('Access denied.'));
+      }
+    }
+    callback(null, user, context);
+}
+```
+**Whichever option you choose, make sure to edit the newly made Rule script with the name of the app you created earlier, and the emails you want to whitelist.**
 
 ### Running the app:
 
