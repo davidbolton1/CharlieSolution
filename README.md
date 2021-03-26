@@ -3,13 +3,13 @@ Hey Charlie,
 
 Thanks again for choosing Auth0! Here's a quick guide to run the application.
 
-### Application Goals
+## Application Goals
 - Be protected by Auth0 authorization
 - Show applications and rules for a given tenant
 - Whitelist certain users
 
 
-#### Installation
+### Installation
 1. Clone/Download the repo
 
 2. CD into the application and run ```npm i``` to install the dependencies
