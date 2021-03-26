@@ -15,7 +15,7 @@ Thanks again for choosing Auth0! Here's a quick guide to run the application.
 2. CD into the application and run ```npm i``` to install the dependencies
 
 ### Auth0 Setup
-1. Visit your [auth0 Dashboard](https://manage.auth0.com/dashboard/) -> Applications -> Create Application -> Regular Web Application 
+1. Visit your [auth0 Dashboard](https://manage.auth0.com/dashboard/) -> Applications -> Create Application -> Regular Web Application <br>
 Make the application and give it any name you'd like.
 
 2. Click the Settings tab of that application and add `http://localhost:3000/callback` and `http://localhost:3000/` to your application's Allowed Callback URLs and Allowed Logout URLs. Like so:
