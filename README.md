@@ -11,7 +11,7 @@ Here's a quick guide to getting the application up and running!
 
 ### Installation
 1. The first step is to either clone or download the repo. <br>
-You can download a zip file or run `git clone git@github.com:davidbolton1/CharlieSolution.git`.
+You can download a zip file from GitHub or run `git clone git@github.com:davidbolton1/CharlieSolution.git` in the command line.
 
 2. Then, change your directory to the application by using: `cd CharlieSolution`.
 3. Lastly, run ```npm i``` to install the project dependencies.
