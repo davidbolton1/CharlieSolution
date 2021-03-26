@@ -33,10 +33,9 @@ Create the new application and give it any name you'd like.
 
 **While you are on the Management API page visit the "Api Explorer" tab -> Create application(If you have made an API explorer application already you can skip this step) -> Copy the given token. Navigate to the .env.example file and replace the placeholder in the AUTH0_APIV2_TOKEN field with the token value that was just copied.**
 
-4. From the dashboard click Auth Pipeline -> Rules -> Create Rule -> Whitelist for a Specific App
+4. From the dashboard click Auth Pipeline -> Rules -> Create Rule -> Whitelist for a Specific App -> Save Changes
 ![Alt text](./public/whitelist.png?raw=true "Whitelist Rule")
 
-If the rule already exists, you could add this JS code instead.
 ``` javascript
 function userWhitelistForSpecificApp(user, context, callback) {
   // Access should only be granted to verified users.
@@ -62,7 +61,7 @@ function userWhitelistForSpecificApp(user, context, callback) {
   callback(null, user, context);
 }
 ```
-**Whichever option you choose, make sure to edit the newly made Rule script with the name of the app you created earlier, and the emails you want to whitelist.**
+**Make sure to edit the newly made Rule script with the name of the app you created earlier, and the emails you want to whitelist.**
 
 *You can read about more advanced configurations in the [Auth0 Management API V2 Docs](https://auth0.com/docs/api/management/v2).*
 
