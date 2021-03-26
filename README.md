@@ -38,19 +38,28 @@ Create the new application and give it any name you'd like.
 
 If the rule already exists, you could add this JS code instead.
 ``` javascript
-function (user, context, callback) {
-  if(context.clientName === 'ListOfRulesApplication') {
-      var whitelist = [ 'youremail@example.com' ]; //authorized users
-      var userHasAccess = whitelist.some(
-        function (email) {
-          return email === user.email;
-        });
+function userWhitelistForSpecificApp(user, context, callback) {
+  // Access should only be granted to verified users.
+  if (!user.email || !user.email_verified) {
+    return callback(new UnauthorizedError('Access denied.'));
+  }
 
-      if (!userHasAccess) {
-        return callback(new UnauthorizedError('Access denied.'));
-      }
-    }
-    callback(null, user, context);
+  // only enforce for NameOfTheAppWithWhiteList
+  // bypass this rule for all other apps
+  if (context.clientName !== 'NameOfTheAppWithWhiteList') {
+    return callback(null, user, context);
+  }
+
+  const whitelist = ['user1@example.com', 'user2@example.com']; // authorized users
+  const userHasAccess = whitelist.some(function (email) {
+    return email === user.email;
+  });
+
+  if (!userHasAccess) {
+    return callback(new UnauthorizedError('Access denied.'));
+  }
+
+  callback(null, user, context);
 }
 ```
 **Whichever option you choose, make sure to edit the newly made Rule script with the name of the app you created earlier, and the emails you want to whitelist.**
