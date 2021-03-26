@@ -55,7 +55,7 @@ function (user, context, callback) {
 ```
 **Whichever option you choose, make sure to edit the newly made Rule script with the name of the app you created earlier, and the emails you want to whitelist.**
 
-*You can read about more advanced configurations on the [Auth0 Management API V2 Docs](https://auth0.com/docs/api/management/v2).*
+*You can read about more advanced configurations in the [Auth0 Management API V2 Docs](https://auth0.com/docs/api/management/v2).*
 
 ### Running the app:
 
