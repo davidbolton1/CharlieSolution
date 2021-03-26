@@ -1,7 +1,7 @@
 # Charlie's Solution
 Hey Charlie,
 
-Thanks again for choosing Auth0! Here's a quick guide to run the application.
+Thanks again for choosing Auth0! Here's a quick guide to getting the application up and running.
 
 ## Application Goals
 - Be protected by Auth0 authorization
